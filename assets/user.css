@@ -45,10 +45,24 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Ensure iframe backgrounds blend in */
+/* Ensure iframe widget matches the rounded corners and border of other widgets */
+.widget-type-iframe .widget-content {
+  overflow: hidden !important;
+  border-radius: var(--border-radius) !important;
+  background: var(--color-widget-background) !important;
+  border: 1px solid var(--color-widget-content-border) !important;
+}
+
 .widget-type-iframe iframe {
   border: none !important;
   background: transparent !important;
+  border-radius: var(--border-radius) !important;
+  display: block !important;
+  scrollbar-width: none !important; /* Firefox */
+}
+
+.widget-type-iframe iframe::-webkit-scrollbar {
+  display: none !important; /* Safari and Chrome */
 }
 
 /* Custom Header Links Styling */
