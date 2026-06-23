@@ -4,6 +4,11 @@
   columns:
     - size: small
       widgets:
+        - type: iframe
+          title: Uptime
+          source: https://uptime.delamater.xyz/status/default
+          height: 460
+
         - type: calendar
           first-day-of-week: monday
 
