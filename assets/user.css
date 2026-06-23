@@ -1,0 +1,70 @@
+:root {
+  --color-background: #1a1a1a !important;
+  --color-widget-background: #151821 !important;
+  --color-widget-background-highlight: #1c202b !important;
+  --color-widget-content-border: #222733 !important;
+  --color-separator: #1c212b !important;
+  --color-popover-background: #151821 !important;
+  --color-popover-border: #262b36 !important;
+  
+  --color-primary: #7ca7ff !important;
+  --color-positive: #5fd28a !important;
+  --color-negative: #f08ca0 !important;
+  
+  --color-text-highlight: #ffffff !important;
+  --color-text-paragraph: #e6e6e6 !important;
+  --color-text-base: #e6e6e6 !important;
+  --color-text-base-muted: #8b93a7 !important;
+  --color-text-subdue: #626a7e !important;
+}
+
+body {
+  background-color: var(--color-background) !important;
+  color: var(--color-text-base) !important;
+  font-family: system-ui, sans-serif !important;
+}
+
+/* Customize header to blend in seamlessly like the Hot Topics app's header */
+.header-container {
+  border-bottom: 1px solid #262b36 !important;
+  background-color: #1a1a1a !important;
+}
+
+.header {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Style links to use the theme accent color */
+a {
+  color: var(--color-primary) !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure iframe backgrounds blend in */
+.widget-type-iframe iframe {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Custom Header Links Styling */
+#custom-header-links a {
+  transition: color 0.15s ease !important;
+}
+
+#custom-header-links a:hover {
+  color: var(--color-primary) !important;
+  text-decoration: none !important;
+}
+
+#custom-header-links img {
+  transition: filter 0.15s ease !important;
+}
+
+#custom-header-links a:hover img {
+  filter: invert(0.95) !important;
+}

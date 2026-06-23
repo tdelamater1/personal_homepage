@@ -1,0 +1,96 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: twitch-channels
+          collapse-after: 6
+          channels:
+            - theprimeagen
+            - j_blow
+            - giantwaffle
+            - cohhcarnage
+            - christitustech
+            - EJ_SA
+            - piratesoftware
+            - zackrawrr
+            - paymoneywubby
+            - qtcinderella
+
+    - size: full
+      widgets:
+        - type: videos
+          channels:
+            - UCDAck-gFPTrgTx_qp59-bQA # Mischa
+            - UCUyeluBRhGPCW4rPe_UvBZQ # The primeagen
+            - UCNzszbnvQeFzObW0ghk0Ckw # Dave's Garage
+            - UCP5tjEmvPItGyLhmjdwP7Ww # Real Life Lore
+            - UCfdNM3NAhaBOXCafH7krzrA # Infographic Show
+            - UCDRIjKy6eZOvKtOELtTdeUA # Breaking Points
+            - UCv6J_jJa8GJqFwQNgNrMuww # STH
+            - UCFQMnBA3CS502aghlcr0_aw # Coffeezilla
+            - UC9evhW4JB_UdXSLeZGy8lGw # Raid Owl
+            - UC9x0AN7BWHpCDHSm9NiJFJQ # Network chuck
+            - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+
+        - type: iframe
+          title: Hot Topics
+          source: https://hot-topics.delamater.xyz/
+          height: 600
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: worldnews 
+              show-thumbnails: true
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+            - type: reddit
+              subreddit: unixporn
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Dallas, United States
+          units: metric # alternatively "imperial"
+          hour-format: 12h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
+
+        - type: markets
+          markets:
+            - symbol: SPY
+              name: S&P 500
+            - symbol: BTC-USD
+              name: Bitcoin
+            - symbol: NVDA
+              name: NVIDIA
+            - symbol: AAPL
+              name: Apple
+            - symbol: MSFT
+              name: Microsoft
+
+        - type: rss
+          limit: 10
+          collapse-after: 6
+          cache: 12h
+          feeds:
+            - url: https://feeds.bbci.co.uk/news/world/rss.xml
+              title: BBC News (World)
+            - url: https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+              title: NYT (World)
+            - url: https://techcrunch.com/feed/
+              title: TechCrunch
+            - url: https://feeds.arstechnica.com/arstechnica/index
+              title: Ars Technica
+            - url: https://www.theverge.com/rss/index.xml
+              title: The Verge
