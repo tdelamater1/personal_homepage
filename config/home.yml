@@ -7,7 +7,7 @@
         - type: iframe
           title: Uptime
           source: https://uptime.delamater.xyz/status/default
-          height: 460
+          height: 477
 
         - type: calendar
           first-day-of-week: monday
@@ -35,7 +35,7 @@
             - UCNzszbnvQeFzObW0ghk0Ckw # Dave's Garage
             - UCP5tjEmvPItGyLhmjdwP7Ww # Real Life Lore
             - UCfdNM3NAhaBOXCafH7krzrA # Infographic Show
-            - UCDRIjKy6eZOvKtOELtTdeUA # Breaking Points
+            #            - UCDRIjKy6eZOvKtOELtTdeUA # Breaking Points
             - UCv6J_jJa8GJqFwQNgNrMuww # STH
             - UCFQMnBA3CS502aghlcr0_aw # Coffeezilla
             - UC9evhW4JB_UdXSLeZGy8lGw # Raid Owl
@@ -45,7 +45,7 @@
         - type: iframe
           title: Hot Topics
           source: https://hot-topics.delamater.xyz/
-          height: 600
+          height: 475
 
         - type: group
           widgets:
