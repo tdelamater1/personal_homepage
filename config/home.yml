@@ -9,9 +9,6 @@
           source: https://uptime.delamater.xyz/status/default
           height: 477
 
-        - type: calendar
-          first-day-of-week: monday
-
         - type: twitch-channels
           collapse-after: 6
           channels:
@@ -64,12 +61,6 @@
 
     - size: small
       widgets:
-        - type: weather
-          location: Dallas, United States
-          units: metric # alternatively "imperial"
-          hour-format: 12h # alternatively "24h"
-          # Optionally hide the location from being displayed in the widget
-          # hide-location: true
 
         - type: markets
           markets:
