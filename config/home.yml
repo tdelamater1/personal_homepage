@@ -9,19 +9,35 @@
           source: https://uptime.delamater.xyz/status/default
           height: 477
 
-        - type: twitch-channels
+        - type: rss
+          title: YouTube Shorts
+          style: detailed-list
+          css-class: yt-shorts-widget
+          limit: 36
           collapse-after: 6
-          channels:
-            - theprimeagen
-            - j_blow
-            - giantwaffle
-            - cohhcarnage
-            - christitustech
-            - EJ_SA
-            - piratesoftware
-            - zackrawrr
-            - paymoneywubby
-            - qtcinderella
+          show-thumbnails: true
+          cache: 1h
+          feeds:
+            - url: http://shorts-filter:8081/shorts?channel_id=UCDAck-gFPTrgTx_qp59-bQA
+              title: Mischa Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ
+              title: The Primeagen Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UCNzszbnvQeFzObW0ghk0Ckw
+              title: Dave's Garage Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UCP5tjEmvPItGyLhmjdwP7Ww
+              title: Real Life Lore Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UCfdNM3NAhaBOXCafH7krzrA
+              title: Infographic Show Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UCv6J_jJa8GJqFwQNgNrMuww
+              title: STH Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UCFQMnBA3CS502aghlcr0_aw
+              title: Coffeezilla Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UC9evhW4JB_UdXSLeZGy8lGw
+              title: Raid Owl Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ
+              title: Network Chuck Shorts
+            - url: http://shorts-filter:8081/shorts?channel_id=UCR-DXc1voovS8nhAvccRZhg
+              title: Jeff Geerling Shorts
 
     - size: full
       widgets:
