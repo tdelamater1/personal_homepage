@@ -12,3 +12,14 @@ services:
     ports:
       - 8080:8080
     env_file: .env
+    depends_on:
+      - shorts-filter
+
+  shorts-filter:
+    container_name: shorts-filter
+    image: python:3.13-alpine
+    restart: unless-stopped
+    volumes:
+      - ./shorts-filter.py:/app/shorts-filter.py
+    working_dir: /app
+    command: python shorts-filter.py
