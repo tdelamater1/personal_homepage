@@ -18,6 +18,12 @@
           show-thumbnails: true
           cache: 1h
           feeds:
+            - url: http://shorts-filter:8081/shorts?channel_id=UCwWhs_6x42TyRM4Wstoq8HA
+              title: daily show
+            - url: http://shorts-filter:8081/shorts?channel_id=UC6nSUYItsVRGuInCsh8K-tQ
+              title: asmongold
+            - url: http://shorts-filter:8081/shorts?channel_id=UCv774Y970Y6mZun_W82nN_Q
+              title: PewDiePie
             - url: http://shorts-filter:8081/shorts?channel_id=UCDAck-gFPTrgTx_qp59-bQA
               title: Mischa Shorts
             - url: http://shorts-filter:8081/shorts?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ
