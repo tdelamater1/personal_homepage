@@ -13,7 +13,7 @@
           title: YouTube Shorts
           style: detailed-list
           css-class: yt-shorts-widget
-          limit: 36
+          limit: 64
           collapse-after: 6
           show-thumbnails: true
           cache: 1h
